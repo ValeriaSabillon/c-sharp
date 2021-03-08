@@ -3,7 +3,8 @@
 namespace inventario
 {
     class Program
-    {   
+    {
+          
 
         static void Main(string[] args)
         {
@@ -26,20 +27,14 @@ namespace inventario
                 switch(opcion){
                     case "1":
                     inventario.listarProductos();
-                      break;
+                    break;
                     case "2":
                     inventario.ingresoDeInventario();
                     break;
                     case "3":
                     inventario.salidaDeInventario();
                     break;
-                    case "4":
-                    inventario.ingresoPositivoDeInventario();
-                    break;
-                    case "5":
-                    inventario.ingresoNegativoDeInventario();
-                    break;
-                     default:
+                    default:
                     break;
                 }
               
