@@ -34,6 +34,12 @@ namespace inventario
                     case "3":
                     inventario.salidaDeInventario();
                     break;
+                    case "4":
+                    inventario.ajustePositivoDeInventario();
+                    break;
+                    case "5":
+                    inventario.ajusteNegativoDeInventario();
+                    break;
                     default:
                     break;
                 }
