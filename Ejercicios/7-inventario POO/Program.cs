@@ -13,7 +13,7 @@ namespace inventario
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("Sistema de Inventario");
+                Console.WriteLine("Sistema De Inventario");
                 Console.WriteLine("*********************");
                 Console.WriteLine("");
                 Console.WriteLine("1 - Productos");
