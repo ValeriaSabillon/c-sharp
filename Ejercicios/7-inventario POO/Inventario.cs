@@ -27,7 +27,7 @@ public void listarProductos(){
     Console.WriteLine("");
     Console.WriteLine("Litado de Productos");
     Console.WriteLine("*******************");
-    Console.WriteLine("Codigo,Descripcion y Existencia ");
+    Console.WriteLine("Codigo,Descripcion, Existencia y Valor ");
 
     foreach (var producto in ListadeProductos)
     {
