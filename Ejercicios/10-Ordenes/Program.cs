@@ -27,6 +27,12 @@ namespace _10_Ordenes
                     case "1":
                     datos.ListarProductos();
                     break;
+                     case "3":
+                    datos.ListarClientes();                    break;
+                     case "4":
+                    datos.ListarVendedores();
+                    break;
+                     
                     default:
                    break; 
                 }
