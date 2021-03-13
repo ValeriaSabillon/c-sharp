@@ -6,6 +6,7 @@ public class DatosdePrueba
     public List<Producto> ListadeProductos{ get; set; }
     public  List<Cliente> ListadeClientes{ get; set; }
     public  List<Vendedor> ListadeVendedores{ get; set; }
+    public List<Orden> listaOrdenes{ get; set; }
     public DatosdePrueba()
     {
         ListadeProductos= new List<Producto>();
@@ -16,6 +17,9 @@ public class DatosdePrueba
 
         ListadeVendedores= new List<Vendedor>();
         cargarVendedores();
+
+        listaOrdenes= new List<Orden>();
+
     }
 
 private void cargarClientes()
@@ -88,5 +92,55 @@ private void cargarVendedores()
             Console.WriteLine(producto.Codigo +"|"+ producto.Descripcion +"|"+ producto.Precio);
         }
         Console.ReadLine();
+    }
+    public void CrearOrden()
+    {
+        Console.WriteLine("Creando Orden");
+        Console.WriteLine("*************");
+        Console.WriteLine("");
+
+       Console.WriteLine("Ingrese el codigo del cliente");
+       string codigoCliente= Console.ReadLine();
+       Console.WriteLine("Ingrese el codigo del vendedor");
+       string codigoVendedor= Console.ReadLine();
+
+       Cliente cliente=ListadeClientes.Find(c => c.Codigo.ToString()==codigoCliente);
+       if (cliente==null)
+       {
+           Console.WriteLine("Cliente no encontrado");
+           return;
+       }
+       Vendedor vendedor=ListadeVendedores.Find(v=> v.Codigo.ToString()==codigoVendedor);
+        if (vendedor==null)
+       {
+           Console.WriteLine("Vendedor no encontrado");
+           return;
+       }
+       int nuevoCodigo=listaOrdenes.Count+1;
+
+        Orden nuevaOrden= new Orden(1, DateTime.Now,"SPS001"+nuevoCodigo,cliente,vendedor);
+        listaOrdenes.Add(nuevaOrden);
+
+        while(true)
+        {
+            Console.WriteLine("Ingrese el Producto");
+            string codigoProducto = Console.ReadLine();
+            
+            Producto producto=ListadeProductos.Find(p => p.Codigo.ToString() == codigoProducto);
+            if (producto==null)
+            {
+                Console.WriteLine("Producto no encontrado");
+                return;
+            }else{
+                nuevaOrden.AgregarProducto(producto);
+            }
+
+            Console.WriteLine("Desea continuar? s/n");
+            string continuar= Console.ReadLine();
+            if(continuar.ToLower()=="n")
+            {
+                break;
+            }
+        }
     }
 }
