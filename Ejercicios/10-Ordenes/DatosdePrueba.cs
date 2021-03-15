@@ -130,6 +130,7 @@ private void cargarVendedores()
 
         while(true)
         {
+            Console.WriteLine("");
             Console.WriteLine("Ingrese el Producto");
             string codigoProducto = Console.ReadLine();
             
@@ -140,7 +141,7 @@ private void cargarVendedores()
                  Console.ReadLine();
 
                 }else{
-                Console.WriteLine("Producto agregado:"+ producto.Descripcion+"con precio de:"+ producto.Precio);
+                Console.WriteLine("Producto agregado:"+ producto.Descripcion+ "con precio de:"+ producto.Precio);
                 nuevaOrden.AgregarProducto(producto);
             }
 
@@ -151,7 +152,11 @@ private void cargarVendedores()
             }
         }
         Console.WriteLine("");
-        Console.WriteLine("Total de la orden es de:"+nuevaOrden.Total);
+        Console.WriteLine("EL subtotal de la orden es de:"+nuevaOrden.Subtotal);
+        
+        Console.WriteLine("EL Impuesto de la orden es de:"+nuevaOrden.Impuesto);
+     
+        Console.WriteLine("EL Total de la orden es de:"+nuevaOrden.Total);
         Console.ReadLine();
     }
     public void ListarOrdenes()
@@ -167,16 +172,20 @@ private void cargarVendedores()
 
         foreach (var orden in ListaOrdenes)
         {
+            Console.WriteLine("");
             Console.WriteLine(orden.Codigo +"|"+ orden.Fecha +"|"+ orden.Total);
             Console.WriteLine(orden.Cliente.Nombre  +"|"+ orden.Vendedor.Nombre);
 
             foreach (var detalle in orden.ListaOrdenDetalle)
             {
-              Console.WriteLine("    "+detalle.Producto.Descripcion+"|"+detalle.Cantidad+"|"+detalle.Precio);
+              Console.WriteLine("    "+detalle.Producto.Descripcion+"|"+detalle.Cantidad+"|"+orden.Total);
 
              }
              Console.WriteLine();
-        }
+             Console.WriteLine("EL subtotal de la orden es de:"+orden.Subtotal);
+             Console.WriteLine("EL Impuesto de la orden es de:"+orden.Impuesto);
+             Console.WriteLine("EL Total de la orden es de:"+orden.Total);
+             }
         
         Console.ReadLine();
     }
