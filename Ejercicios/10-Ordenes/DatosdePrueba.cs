@@ -125,7 +125,7 @@ private void cargarVendedores()
         }
        int nuevoCodigo=ListaOrdenes.Count +1;
 
-        Orden nuevaOrden= new Orden(1, DateTime.Now,"SPS001"+nuevoCodigo,cliente,vendedor);
+        Orden nuevaOrden = new Orden(nuevoCodigo, DateTime.Now, "SPS" + nuevoCodigo, cliente, vendedor);
         ListaOrdenes.Add(nuevaOrden);
 
         while(true)
@@ -141,7 +141,7 @@ private void cargarVendedores()
                  Console.ReadLine();
 
                 }else{
-                Console.WriteLine("Producto agregado:"+ producto.Descripcion+ "con precio de:"+ producto.Precio);
+                Console.WriteLine("Producto agregado:"+ producto.Descripcion+ " con precio de:"+ producto.Precio);
                 nuevaOrden.AgregarProducto(producto);
             }
 
@@ -174,7 +174,7 @@ private void cargarVendedores()
         {
             Console.WriteLine("");
             Console.WriteLine(orden.Codigo +"|"+ orden.Fecha +"|"+ orden.Total);
-            Console.WriteLine(orden.Cliente.Nombre  +"|"+ orden.Vendedor.Nombre);
+            Console.WriteLine("    "+orden.Cliente.Nombre  +"|"+ orden.Vendedor.Nombre);
 
             foreach (var detalle in orden.ListaOrdenDetalle)
             {
