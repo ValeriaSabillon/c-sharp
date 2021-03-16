@@ -162,12 +162,12 @@ private void cargarVendedores()
     public void ListarOrdenes()
     {   
         Console.Clear();
-        Console.WriteLine("Lista de Ordenes");
-        Console.WriteLine("******************");
+        Console.WriteLine("\tLista de Ordenes");
+        Console.WriteLine("\t******************");
         Console.WriteLine("");
-        Console.WriteLine("Codigo|Fecha|Total");
-        Console.WriteLine("Cliente|Vendedor");
-        Console.WriteLine("******************");
+        Console.WriteLine("\tCodigo|Fecha|Total");
+        Console.WriteLine("\tCliente|Vendedor");
+        Console.WriteLine("\t******************");
         Console.WriteLine("");
 
         foreach (var orden in ListaOrdenes)
