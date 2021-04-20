@@ -43,6 +43,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("Empecemos");
           Console.WriteLine("XXXXXXXXXX");
           Console.WriteLine("\n");
+           Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+
           Console.WriteLine("Pregunta 1");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
           Console.WriteLine( "___________________________________");
@@ -69,6 +71,8 @@ namespace Quien_Quiere_Ser_Millonario
                                  
             }
           if (opcion=="si"){
+           Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+
           Console.WriteLine("Pregunta 2");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
           Console.WriteLine( "_______________________________________________________________________________");
@@ -92,8 +96,15 @@ namespace Quien_Quiere_Ser_Millonario
               opcion=Console.ReadLine();
                                       
             } if (opcion=="si"){
+          Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 3");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
+          if(opcion=="f" && re<=0){
+              comodin=comodin-1;
+              
+              Console.WriteLine("A L E R TA");
+              Console.WriteLine("Ya no puedes usar comodines");
+          }
           Console.WriteLine( "____________________________________________________________________________");
           Console.WriteLine("|Con que material esculpió Miguel Angel (La Piedad) ubicada en el Vaticano?:|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -104,15 +115,6 @@ namespace Quien_Quiere_Ser_Millonario
             Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
-          }else if(opcion=="f"){
-              comodin=comodin-1;
-              re=comodin;
-              if(opcion=="f" && re<=0){
-              comodin=comodin-1;
-              
-              Console.WriteLine("Ya no puedes usar comodines");
-              Console.WriteLine("Desea Continuar");
-              opcion=Console.ReadLine(); 
           }else if(opcion=="f" && re>=1)
 
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -122,7 +124,35 @@ namespace Quien_Quiere_Ser_Millonario
               opcion=Console.ReadLine();            
               
                 }if (opcion=="si"){
+          Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 4");
+          Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
+          Console.WriteLine( "______________________________________");
+          Console.WriteLine("|Cual es el idioma oficial de Israel?:|");
+          Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––");
+          Console.WriteLine("(A)Japones      (B)Griego ");
+          Console.WriteLine("(C)Hebreo       (D)Chino ");
+          opcion=Console.ReadLine();
+          }if(opcion=="C"){
+            Console.WriteLine("Opcion correcta");
+              Console.WriteLine("Desea Continuar");
+              opcion=Console.ReadLine();
+          }else if(opcion=="f" && re<=0){
+              comodin=comodin-1;
+              
+
+              Console.WriteLine("Ya no puedes usar comodines");
+
+          }else{
+              Console.WriteLine("Haz utilizado un comodin, te quedan:");
+              Console.WriteLine(re);
+              Console.WriteLine("Respuesta correcta es:(C)Hebreo");
+               Console.WriteLine("Desea Continuar");
+              opcion=Console.ReadLine(); 
+                  
+              }if (opcion=="si"){
+          Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+          Console.WriteLine("Pregunta 5");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
           Console.WriteLine( "______________________________________");
           Console.WriteLine("|Cual es el idioma oficial de Israel?:|");
