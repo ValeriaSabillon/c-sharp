@@ -45,12 +45,16 @@ namespace Quien_Quiere_Ser_Millonario
             {
                 case "1":
                 j.ListadePreguntas();
+                Console.Clear();
+
                 break;
                 default:
                 break;
             }
                 if(opcion=="2")
                 {
+                    Console.Clear();
+
                     break;
                 }
             }
