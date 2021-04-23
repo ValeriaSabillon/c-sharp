@@ -116,13 +116,12 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Japones      (B)Griego ");
           Console.WriteLine("(C)Hebreo       (D)Chino ");
           opcion=Console.ReadLine();
-          } if(opcion=="f" && re>=0){
-                        
+          }if(opcion=="f" && re<=0){
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
                Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
-          }if(opcion=="si"){
+          } if(opcion=="si"){
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 4");
           Console.WriteLine(" YA NO HAY COMODINES");
@@ -157,7 +156,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Calcio       (B)Pigmentacion ");
           Console.WriteLine("(C)Vitamina A   (D)Oxigeno");
           opcion=Console.ReadLine();
-          } if(opcion=="f" && re>=0){
+          }  if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -198,7 +197,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Calcio       (B)Pigmentacion ");
           Console.WriteLine("(C)Vitamina A   (D)Oxigeno");
           opcion=Console.ReadLine();
-          } if(opcion=="f" && re>=0){
+          } if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -206,7 +205,7 @@ namespace Quien_Quiere_Ser_Millonario
               opcion=Console.ReadLine();
           }if(opcion=="si"){
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-          Console.WriteLine("Pregunta 5");
+          Console.WriteLine("Pregunta 6");
           Console.WriteLine(" YA NO HAY COMODINES");
            Console.WriteLine( "______________________________________________");
           Console.WriteLine("|El albinismo se presenta por la carencia de:?:|");
