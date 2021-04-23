@@ -38,7 +38,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("4- Si te equivocas con una pregunta pierdes el premio");
           Console.WriteLine("5- Tienes derecho a renunciar con la cantidad de premio que obtuvo");
           
-         for(comodin=3;comodin>=0;comodin--){
+         for(comodin=3;comodin==0;comodin--){
           Console.WriteLine("XXXXXXXXXX ");
           Console.WriteLine("Empecemos");
           Console.WriteLine("XXXXXXXXXX");
@@ -99,12 +99,6 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 3");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
-          if(opcion=="f" && re<=0){
-              re=comodin-1;
-              
-              Console.WriteLine("A L E R TA");
-              Console.WriteLine("Ya no puedes usar comodines");
-          }
           Console.WriteLine( "____________________________________________________________________________");
           Console.WriteLine("|Con que material esculpió Miguel Angel (La Piedad) ubicada en el Vaticano?:|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -115,6 +109,11 @@ namespace Quien_Quiere_Ser_Millonario
             Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
+          } else if(opcion=="f" && re==0){
+              re=comodin-1;
+              
+              Console.WriteLine("A L E R TA");
+              Console.WriteLine("Ya no puedes usar comodines");
           }else if(opcion=="f" && re>=1)
 
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
