@@ -100,7 +100,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("Pregunta 3");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
           if(opcion=="f" && re<=0){
-              comodin=comodin-1;
+              re=comodin-1;
               
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -178,7 +178,7 @@ namespace Quien_Quiere_Ser_Millonario
               opcion=Console.ReadLine(); 
                   
               }
-            }
+            
           }
         }
     } 
