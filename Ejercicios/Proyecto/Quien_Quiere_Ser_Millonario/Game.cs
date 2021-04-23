@@ -21,14 +21,15 @@ namespace Quien_Quiere_Ser_Millonario
          Console.Clear();
         Console.BackgroundColor=ConsoleColor.Blue;
 
-          string nombre=""; 
-          int comodin=3;
-          int re=0;
           
 
           while(true){
           Console.Clear();
           string opcion="";
+          string nombre=""; 
+          int comodin=3;
+          int re=0;
+          
           Console.WriteLine("Escriba su nombre:");
           nombre=Console.ReadLine();
           Console.WriteLine("Las reglas del juego:");
@@ -38,7 +39,6 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("4- Si te equivocas con una pregunta pierdes el premio");
           Console.WriteLine("5- Tienes derecho a renunciar con la cantidad de premio que obtuvo");
           
-         for(comodin=3;comodin==0;comodin--){
           Console.WriteLine("XXXXXXXXXX ");
           Console.WriteLine("Empecemos");
           Console.WriteLine("XXXXXXXXXX");
@@ -110,16 +110,17 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
           } else if(opcion=="f" && re==0){
-              re=comodin-1;
+              comodin=comodin-1;
+              re=comodin;
               
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
-          }else if(opcion=="f" && re>=1)
+          }else if(opcion=="f" && re>=1){
 
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
               Console.WriteLine(re);
               Console.WriteLine("Respuesta correcta es:(B)Marmol");
-               Console.WriteLine("Desea Continuar");
+              Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();            
               
                 }if (opcion=="si"){
