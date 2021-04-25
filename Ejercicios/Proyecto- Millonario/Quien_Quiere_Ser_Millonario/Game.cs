@@ -56,6 +56,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("\tPregunta 1  ");
           Console.WriteLine(" POR LPS.15,000");
           Console.WriteLine("Si Deseas utilizar un comodin presiona la letra F  ");
+          Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( "___________________________________");
           Console.WriteLine("|Una tarjeta SD es un dispositivo de|");
           Console.WriteLine(" –––––––––––––––––––––––––––––––––––");
@@ -69,7 +70,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
               
-          }if(opcion=="D"){
+          }if(opcion !="D"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="D"){
               Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
@@ -125,7 +133,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion=="A"){
+          }if(opcion !="A"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="A"){
             Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
@@ -165,6 +180,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("\tPregunta 3");
           Console.WriteLine("POR LPS 35,000");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+          Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( "____________________________________________________________________________");
           Console.WriteLine("|Con que material esculpió Miguel Angel (La Piedad) ubicada en el Vaticano?:|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -177,9 +193,16 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion=="B"){
+          }if(opcion !="B"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="B"){
             Console.WriteLine("Opcion correcta");
-              Console.WriteLine("Desea Continuar");
+              Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
           } else if(opcion=="F" && re>=1){
               comodin=comodin-1;
@@ -216,6 +239,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("\tPregunta 4");
           Console.WriteLine("POR 65,000");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+           Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( "______________________________________");
           Console.WriteLine("|Cual es el idioma oficial de Israel?:|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––");
@@ -230,7 +254,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          } if(opcion=="F" && re<=0){
+          }if(opcion !="C"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            } if(opcion=="F" && re<=0){
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
                Console.WriteLine("Desea Continuar (SI/NO)");
@@ -245,6 +276,7 @@ namespace Quien_Quiere_Ser_Millonario
             }if(opcion=="SI"){
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("\tPregunta 4");
+           Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine(" YA NO HAY COMODINES");
           Console.WriteLine( "______________________________________");
           Console.WriteLine("|Cual es el idioma oficial de Israel?:|");
@@ -259,7 +291,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion=="C"){
+          }if(opcion !="C"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="C"){
               Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
@@ -296,9 +335,10 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("                           |    15,000 | ");
           Console.WriteLine("                            ––––––––––– ");
           Console.ForegroundColor=ConsoleColor.Black;
-          Console.WriteLine("/tPregunta 5");
+          Console.WriteLine("/t Pregunta 5");
           Console.WriteLine("POR 80,000");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+          Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( "______________________________________________");
           Console.WriteLine("|El albinismo se presenta por la carencia de:?:|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––");
@@ -313,7 +353,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          } if(opcion=="F" && re<=0){
+          } if(opcion !="B"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="F" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -330,6 +377,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("\tPregunta 5");
           Console.WriteLine(" YA NO HAY COMODINES");
+            Console.WriteLine("Deseas renunciar presiona la letra Y");
            Console.WriteLine( "______________________________________________");
           Console.WriteLine("|El albinismo se presenta por la carencia de   |");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––");
@@ -343,7 +391,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion=="B"){
+          }if(opcion !="B"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="B"){
               Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
@@ -383,6 +438,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("\t Pregunta 6");
           Console.WriteLine("POR LPS 200,000");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+            Console.WriteLine("Deseas renunciar presiona la letra Y");
          Console.WriteLine( "____________________");
           Console.WriteLine("|La hormiga es un:  ?|");
           Console.WriteLine(" ––––––––––––––––––––");
@@ -397,7 +453,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          } if(opcion=="F" && re<=0){
+          }if(opcion !="A"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            } if(opcion=="F" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -414,6 +477,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("\tPregunta 6");
           Console.WriteLine(" YA NO HAY COMODINES");
+            Console.WriteLine("Deseas renunciar presiona la letra Y");
            Console.WriteLine( "____________________");
           Console.WriteLine("|La hormiga es un:  ?|");
           Console.WriteLine(" ––––––––––––––––––––");
@@ -427,7 +491,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion=="A"){
+          }if(opcion !="A"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="A"){
               Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
@@ -466,6 +537,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("\tPregunta 7");
           Console.WriteLine("POR LPS 400,000");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+          Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( "_________________________________________________________");
           Console.WriteLine("|A que tipo de animales se refiere la palabra (aviario)  ?|");
           Console.WriteLine(" –––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -480,7 +552,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          } if(opcion=="F" && re<=0){
+          }if(opcion !="D"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            } if(opcion=="F" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -497,6 +576,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 7");
           Console.WriteLine(" YA NO HAY COMODINES");
+          Console.WriteLine(" Desea renunciar presiona la letra Y");
          Console.WriteLine( " _________________________________________________________");
           Console.WriteLine("|A que tipo de animales se refiere la palabra (aviario)  ?|");
           Console.WriteLine(" –––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -510,7 +590,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion=="D"){
+          }if(opcion !="D"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="D"){
               Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
@@ -549,6 +636,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("Pregunta 8");
           Console.WriteLine("POR LPS 600,000");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+          Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( " _________________________________________________");
           Console.WriteLine("|Es el oso blanco que habita en el hielo artico  ?|");
           Console.WriteLine(" –––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -563,7 +651,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          } if(opcion=="F" && re<=0){
+          } if(opcion !="C"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="F" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -588,6 +683,13 @@ namespace Quien_Quiere_Ser_Millonario
             
           }if(opcion=="Y"){
               Console.WriteLine("TU PREMIO ES LPS 400,000");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion !="C"){
+              Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
               Console.ReadKey();
@@ -632,8 +734,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.ForegroundColor=ConsoleColor.Black;
           Console.WriteLine("\tPregunta 9");
           Console.WriteLine("POR LPS 800,000");
-
-          Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+         Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+           Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( " _______________________________________________________");
           Console.WriteLine("|Que elemento químico es representado por el símbolo P  ?|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -649,7 +751,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
                                         
-            } if(opcion=="F" && re<=0){
+            } if(opcion !="A"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="F" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -666,6 +775,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("\tPregunta 9");
           Console.WriteLine(" YA NO HAY COMODINES");
+          Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( " _______________________________________________________");
           Console.WriteLine("|Que elemento químico es representado por el símbolo P  ?|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -675,6 +785,13 @@ namespace Quien_Quiere_Ser_Millonario
             
           }if(opcion=="Y"){
               Console.WriteLine("TU PREMIO ES LPS 600,000");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion !="A"){
+              Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
               Console.ReadKey();
@@ -719,7 +836,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.ForegroundColor=ConsoleColor.Black;
           Console.WriteLine("\tPregunta 10");
           Console.WriteLine("POR LPS 1,000,000");
-          Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
+          Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
+          Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( " _______________________________________________________");
           Console.WriteLine("|Cual de las siguientes palabras es una preposición     ?|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -735,7 +853,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
                                         
-            } if(opcion=="F" && re<=0){
+            } if(opcion !="B"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="F" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -751,6 +876,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 10");
           Console.WriteLine(" YA NO HAY COMODINES");
+           Console.WriteLine("Deseas renunciar presiona la letra Y");
           Console.WriteLine( " _______________________________________________________");
           Console.WriteLine("|Cual de las siguientes palabras es una preposición     ?|");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––––––––––––");
@@ -758,7 +884,21 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(C)Ser           (D)Una");
           opcion=Console.ReadLine();
             
-          }if(opcion=="B"){
+          }if(opcion=="Y"){
+              Console.WriteLine("TU PREMIO ES LPS 800,000");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion !="B"){
+              Console.WriteLine("HAZ PERDIDO");
+              Console.WriteLine("GRACIAS POR JUGAR");
+              Console.WriteLine(nombre);
+              Console.ReadKey();
+              break;
+                                        
+            }if(opcion=="B"){
               Console.WriteLine("Opcion correcta");
               opcion=Console.ReadLine();
               Console.ForegroundColor=ConsoleColor.Red;
