@@ -116,7 +116,9 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Japones      (B)Griego ");
           Console.WriteLine("(C)Hebreo       (D)Chino ");
           opcion=Console.ReadLine();
-          }if(opcion=="f" && re<=0){
+           re=comodin;
+
+          } if(opcion=="f" && re<=0){
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
                Console.WriteLine("Desea Continuar");
@@ -132,12 +134,12 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(C)Hebreo       (D)Chino ");
           opcion=Console.ReadLine();
             
-          } if(opcion=="C"){
+          }if(opcion=="C"){
               Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
 
-          } if(opcion=="f" && re>1){
+          }if(opcion=="f" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -156,7 +158,9 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Calcio       (B)Pigmentacion ");
           Console.WriteLine("(C)Vitamina A   (D)Oxigeno");
           opcion=Console.ReadLine();
-          }  if(opcion=="f" && re<=0){
+           re=comodin;
+
+          } if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
@@ -197,6 +201,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Insecto            (B)Mamifero ");
           Console.WriteLine("(C)Reptil             (D)Aracnido");
           opcion=Console.ReadLine();
+          re=comodin;
+
           } if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
@@ -238,6 +244,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Peces             (B)Moluscos ");
           Console.WriteLine("(C)Mamiferos         (D)Aves");
           opcion=Console.ReadLine();
+          re=comodin;
+
           } if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
@@ -260,7 +268,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
 
-          } if(opcion=="f" && re>1){
+          } if(opcion=="f" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -279,6 +287,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Tropical            (B)Oriental ");
           Console.WriteLine("(C)Polar               (D)Montañes");
           opcion=Console.ReadLine();
+           re=comodin;
+
           } if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
@@ -301,7 +311,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
 
-          } if(opcion=="f" && re>1){
+          } if(opcion=="f" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -320,6 +330,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Fosforo             (B)Boro ");
           Console.WriteLine("(C)Bromo               (D)Rubidio");
           opcion=Console.ReadLine();
+            re=comodin;
+
           } if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
@@ -342,7 +354,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
 
-          } if(opcion=="f" && re>1){
+          } if(opcion=="f" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -361,6 +373,8 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)La            (B)De ");
           Console.WriteLine("(C)Ser           (D)Una");
           opcion=Console.ReadLine();
+                     re=comodin;
+
           } if(opcion=="f" && re<=0){
                         
               Console.WriteLine("A L E R TA");
@@ -383,7 +397,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
 
-          } if(opcion=="f" && re>1){
+          } if(opcion=="f" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");

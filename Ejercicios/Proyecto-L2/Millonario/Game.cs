@@ -57,8 +57,7 @@ namespace Quien_Quiere_Ser_Millonario
               opcion=Console.ReadLine();
               
                                  
-            }
-          if (opcion=="si"){
+            }if (opcion=="si"){
            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
 
           Console.WriteLine("Pregunta 2");
@@ -102,7 +101,7 @@ namespace Quien_Quiere_Ser_Millonario
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
               Console.WriteLine(re);
-              Console.WriteLine("Respuesta correcta es:(B)fMarmol");
+              Console.WriteLine("Respuesta correcta es:(B)Marmol");
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();            
               
@@ -116,12 +115,13 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Japones      (B)Griego ");
           Console.WriteLine("(C)Hebreo       (D)Chino ");
           opcion=Console.ReadLine();
-          }if(opcion=="f" && re<=0){
+          re=comodin;
+          }else if(opcion=="f" && re<=0){
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
                Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
-          } if(opcion=="si"){
+          }else if(opcion=="si"){
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 4");
           Console.WriteLine(" YA NO HAY COMODINES");
@@ -132,12 +132,12 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(C)Hebreo       (D)Chino ");
           opcion=Console.ReadLine();
             
-          } if(opcion=="C"){
+          }if(opcion=="C"){
               Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
 
-          } if(opcion=="f" && re>1){
+          }else if(opcion=="f" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -151,23 +151,23 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("Pregunta 5");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
           Console.WriteLine( "______________________________________________");
-          Console.WriteLine("|El albinismo se presenta por la carencia de:?:|");
+          Console.WriteLine("|El albinismo se presenta por la carencia de:? |");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––");
           Console.WriteLine("(A)Calcio       (B)Pigmentacion ");
           Console.WriteLine("(C)Vitamina A   (D)Oxigeno");
           opcion=Console.ReadLine();
-          }  if(opcion=="f" && re<=0){
-                        
+          } if(opcion=="f" && re<=0){
+                 
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
                Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
-          }if(opcion=="si"){
+          } if(opcion=="si"){
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 5");
           Console.WriteLine(" YA NO HAY COMODINES");
            Console.WriteLine( "______________________________________________");
-          Console.WriteLine("|El albinismo se presenta por la carencia de:?:|");
+          Console.WriteLine("|El albinismo se presenta por la carencia de:? |");
           Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––");
           Console.WriteLine("(A)Calcio       (B)Pigmentacion ");
           Console.WriteLine("(C)Vitamina A   (D)Oxigeno");
@@ -178,7 +178,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine();
 
-          } if(opcion=="f" && re>1){
+          }if(opcion=="f" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -191,14 +191,13 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 6");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
-          Console.WriteLine( "______________________________________________");
-          Console.WriteLine("|El albinismo se presenta por la carencia de:?:|");
-          Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––");
-          Console.WriteLine("(A)Calcio       (B)Pigmentacion ");
-          Console.WriteLine("(C)Vitamina A   (D)Oxigeno");
+          Console.WriteLine( "_______________________________________________________");
+          Console.WriteLine("|Que parte del cuerpo se examina en una encefalografia?|");
+          Console.WriteLine(" –––––––––––––––––––––––––––––––––––––––––––––––––––––––");
+          Console.WriteLine("(A)Ovarios      (B)Craneo ");
+          Console.WriteLine("(C)Pulmones     (D)Higado");
           opcion=Console.ReadLine();
-          } if(opcion=="f" && re<=0){
-                        
+          } if(opcion=="f" && re<=0){         
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
                Console.WriteLine("Desea Continuar");
@@ -207,11 +206,11 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("Pregunta 6");
           Console.WriteLine(" YA NO HAY COMODINES");
-           Console.WriteLine( "______________________________________________");
-          Console.WriteLine("|El albinismo se presenta por la carencia de:?:|");
-          Console.WriteLine(" ––––––––––––––––––––––––––––––––––––––––––––––");
-          Console.WriteLine("(A)Calcio       (B)Pigmentacion ");
-          Console.WriteLine("(C)Vitamina A   (D)Oxigeno");
+           Console.WriteLine( "______________________________________________________");
+          Console.WriteLine("|Que parte del cuerpo se examina en una encefalografia?|");
+          Console.WriteLine(" –––––––––––––––––––––––––––––––––––––––––––––––––––––––");
+          Console.WriteLine("(A)Ovarios      (B)Craneo ");
+          Console.WriteLine("(C)Pulmones     (D)Higado");
           opcion=Console.ReadLine();
             
           }if(opcion=="B"){
@@ -224,13 +223,52 @@ namespace Quien_Quiere_Ser_Millonario
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
               Console.WriteLine(re);
-              Console.WriteLine("Respuesta correcta es:(B)Pigmentacion");
+              Console.WriteLine("Respuesta correcta es:(B)Craneo");
+              Console.WriteLine("Desea Continuar");
+              opcion=Console.ReadLine(); 
+              }if (opcion=="si"){
+          Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+          Console.WriteLine("Pregunta 7");
+          Console.WriteLine("Deseas utilizar un comodin presiona la letra f");
+          Console.WriteLine( "_________________________________");
+          Console.WriteLine("|Según el refran, quien es ciego:?|");
+          Console.WriteLine(" –––––––––––––––––––––––––––––––––");
+          Console.WriteLine("(A)La esperanza      (B)El odio ");
+          Console.WriteLine("(C)El amor           (D)La envidia");
+          opcion=Console.ReadLine();
+          } if(opcion=="f" && re<=0){
+                        
+              Console.WriteLine("A L E R TA");
+              Console.WriteLine("Ya no puedes usar comodines");
+               Console.WriteLine("Desea Continuar");
+              opcion=Console.ReadLine();
+          }if(opcion=="si"){
+              Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+          Console.WriteLine("Pregunta 7");
+          Console.WriteLine(" YA NO HAY COMODINES");
+          Console.WriteLine( "_________________________________");
+          Console.WriteLine("|Según el refran, quien es ciego:?|");
+          Console.WriteLine(" –––––––––––––––––––––––––––––––––");
+          Console.WriteLine("(A)La esperanza      (B)El odio ");
+          Console.WriteLine("(C)El amor           (D)La envidia");
+          opcion=Console.ReadLine();
+            
+          }if(opcion=="C"){
+              Console.WriteLine("Opcion correcta");
+              Console.WriteLine("Desea Continuar");
+              opcion=Console.ReadLine();
+
+          }if(opcion=="f" && re>1){
+              comodin=comodin-1;
+              re=comodin;
+              Console.WriteLine("Haz utilizado un comodin, te quedan:");
+              Console.WriteLine(re);
+              Console.WriteLine("Respuesta correcta es:(C)El amor");
               Console.WriteLine("Desea Continuar");
               opcion=Console.ReadLine(); 
                   
               }
-            
+            }
           }
         }
     } 
-}
