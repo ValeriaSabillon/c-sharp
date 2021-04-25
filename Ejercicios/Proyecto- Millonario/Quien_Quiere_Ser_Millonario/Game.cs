@@ -10,9 +10,7 @@ namespace Quien_Quiere_Ser_Millonario
         public void ListadePreguntas()
         { 
          Console.Clear();
-        Console.BackgroundColor=ConsoleColor.DarkCyan;
-
-          
+        Console.BackgroundColor=ConsoleColor.DarkCyan;     
 
           while(true){
           Console.Clear();
@@ -36,11 +34,6 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("XXXXXXXXXX");
           Console.WriteLine("\n");
            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-
-
-
-
-
           Console.WriteLine("                            ___________");
           Console.WriteLine("                           | 1,000,000 |");
           Console.WriteLine("                           |   800,000 |  ");
@@ -63,6 +56,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Procesamiento de Audio (B)Compresion de video ");
           Console.WriteLine("(C)Comunicacion remota    (D)Memoria ");
           opcion=Console.ReadLine();
+          re=comodin;
           if(opcion=="Y"){
               Console.WriteLine("HAZ RENUNCIADO");
               Console.WriteLine(nombre);
@@ -70,7 +64,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
               
-          }if(opcion !="D"){
+          }if(opcion !="D" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -127,13 +121,15 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Sufragio     (B)Adagio ");
           Console.WriteLine("(C)Naufragio    (D)Prestigio ");
           opcion=Console.ReadLine();
+            re=comodin;
+
           }if(opcion=="Y"){
             Console.WriteLine("TU PREMIO ES LPS 15,000");
               Console.WriteLine("GRACIAS POR JUGAR:");
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="A"){
+          }if(opcion !="A" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -187,13 +183,15 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("(A)Bronce       (B)Marmol ");
           Console.WriteLine("(C)Madera       (D)Yeso ");
           opcion=Console.ReadLine();
+           re=comodin;
+
           }if(opcion=="Y"){
             Console.WriteLine("TU PREMIO ES LPS 25,000");
               Console.WriteLine("GRACIAS POR JUGAR:");
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="B"){
+          }if(opcion !="B" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -204,7 +202,7 @@ namespace Quien_Quiere_Ser_Millonario
             Console.WriteLine("Opcion correcta");
               Console.WriteLine("Desea Continuar (SI/NO)");
               opcion=Console.ReadLine();
-          } else if(opcion=="F" && re>=1){
+          }else  if(opcion=="F" && re>=1){
               comodin=comodin-1;
               re=comodin;
               Console.WriteLine("Haz utilizado un comodin, te quedan:");
@@ -254,14 +252,14 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="C"){
+          }if(opcion !="C" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
                                         
-            } if(opcion=="F" && re<=0){
+            }else if(opcion=="F" && re<=0){
               Console.WriteLine("A L E R TA");
               Console.WriteLine("Ya no puedes usar comodines");
                Console.WriteLine("Desea Continuar (SI/NO)");
@@ -291,7 +289,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="C"){
+          }if(opcion !="C" && opcion!="F" ){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -353,7 +351,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          } if(opcion !="B"){
+          } if(opcion !="B" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -391,7 +389,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="B"){
+          }if(opcion !="B" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -453,7 +451,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="A"){
+          }if(opcion !="A" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -491,7 +489,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="A"){
+          }if(opcion !="A" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -552,7 +550,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="D"){
+          }if(opcion !="D" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -590,7 +588,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          }if(opcion !="D"){
+          }if(opcion !="D" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -651,7 +649,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.WriteLine(nombre);
               Console.ReadKey();
               break;
-          } if(opcion !="C"){
+          } if(opcion !="C" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -688,7 +686,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
                                         
-            }if(opcion !="C"){
+            }if(opcion !="C" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -751,7 +749,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
                                         
-            } if(opcion !="A"){
+            } if(opcion !="A" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -790,7 +788,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
                                         
-            }if(opcion !="A"){
+            }if(opcion !="A" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -853,7 +851,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
                                         
-            } if(opcion !="B"){
+            } if(opcion !="B" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
@@ -891,7 +889,7 @@ namespace Quien_Quiere_Ser_Millonario
               Console.ReadKey();
               break;
                                         
-            }if(opcion !="B"){
+            }if(opcion !="B" && opcion!="F"){
               Console.WriteLine("HAZ PERDIDO");
               Console.WriteLine("GRACIAS POR JUGAR");
               Console.WriteLine(nombre);
