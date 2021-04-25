@@ -28,11 +28,11 @@ namespace Quien_Quiere_Ser_Millonario
             Console.WriteLine("\t         *        *  *  *          *       **      * *      *          *       **  *   *     *    *     *");
             Console.WriteLine("\t         ********** *** ********** *        *       *       ********** *        * *** *******      *****  ");
             Console.WriteLine("\n");
-            Console.WriteLine("     *     ***  *   * *** *** *   *    ***  *   * *** *** **** ***   **** *** ****   *     * *** *   *    ***     *     **** *** ***" );
-            Console.WriteLine("    * *   *   * *   *  *  *   **  *   *   * *   *  *  *   *  * *     *    *   *  *   *     *  *  *   *   *   *   * *    *  *  * *   *");
-            Console.WriteLine("   *****  * * * *   *  *  *** * * *   * * * *   *  *  *** ***  ***     *  **  ***    **  * *  *  *   *   *   *  *****   ***   * *   *");
-            Console.WriteLine("  *     * * * * *   *  *  *   * * *   * * * *   *  *  *   * *  *        * *   * *    * * * *  *  *   *   *   * *     *  * *   * *   *");
-            Console.WriteLine(" *       * *** * ***  *** *** *   *    *** * ***  *** *** *  * ***   **** *** *  *   *  *  * *** *** ***  *** *       * *  * *** *** ");
+            Console.WriteLine("     *     ***  *   * *** *** *   *    ***  *   * *** *** **** ***   **** *** ****   *     * *** *   *    ***  *    *     *      **** *** ***" );
+            Console.WriteLine("    * *   *   * *   *  *  *   **  *   *   * *   *  *  *   *  * *     *    *   *  *   *     *  *  *   *   *   * * *  *    * *     *  *  * *   *");
+            Console.WriteLine("   *****  * * * *   *  *  *** * * *   * * * *   *  *  *** ***  ***     *  **  ***    **  * *  *  *   *   *   * *  * *   *****    ***   * *   *");
+            Console.WriteLine("  *     * * * * *   *  *  *   * * *   * * * *   *  *  *   * *  *        * *   * *    * * * *  *  *   *   *   * *   **  *     *   * *   * *   *");
+            Console.WriteLine(" *       * *** * ***  *** *** *   *    *** * ***  *** *** *  * ***   **** *** *  *   *  *  * *** *** ***  ***  *    * *       *  *  * *** *** ");
             Console.WriteLine("\n");
             Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
             Console.ForegroundColor=ConsoleColor.Blue;
