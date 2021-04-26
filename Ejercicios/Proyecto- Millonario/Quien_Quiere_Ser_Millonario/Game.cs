@@ -22,16 +22,16 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("Escriba su nombre:");
           nombre=Console.ReadLine();
           Console.WriteLine("Las reglas y las instrucciones del juego:");
-          Console.WriteLine("1-Lea con atencion las preguntas que apareceran y escriba la opcion correcta de lo contrario perdera el juego");
+          Console.WriteLine("1- Lea con atencion las preguntas que apareceran y escriba la opcion correcta de lo contrario perdera el juego");
           Console.WriteLine("2- tienes el derecho de utilizar 3 comodines");
           Console.WriteLine("3- Los comodines eliminan las respuestas incorrectas");
           Console.WriteLine("4- Pon tu teclado en mayuscula");
           Console.WriteLine("5- Tienes derecho a renunciar despues de la primer pregunta con la letra Y");
           Console.WriteLine("6- Tienes derecho a renunciar con la cantidad de premio que obtuvo");
           
-          Console.WriteLine("\tXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ");
-          Console.WriteLine("\tEmpecemos");
-          Console.WriteLine("\tXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+          Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ");
+          Console.WriteLine("                                                  EMPECEMOS");
+          Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("\n");
            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("                            ___________");
