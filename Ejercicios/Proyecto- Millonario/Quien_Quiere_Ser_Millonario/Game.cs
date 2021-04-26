@@ -333,7 +333,7 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("                           |    15,000 | ");
           Console.WriteLine("                            ––––––––––– ");
           Console.ForegroundColor=ConsoleColor.Black;
-          Console.WriteLine("/tPregunta 5");
+          Console.WriteLine("\tPregunta 5");
           Console.WriteLine("POR 80,000");
           Console.WriteLine("Deseas utilizar un comodin presiona la letra F");
           Console.WriteLine("Deseas renunciar presiona la letra Y");
