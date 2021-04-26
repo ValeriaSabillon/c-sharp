@@ -34,12 +34,12 @@ namespace Quien_Quiere_Ser_Millonario
             Console.WriteLine("  *     * *   * *   *  *  *   *  **   *   * *   *  *  *   * *  *        * *   * *    * * * *  *  *   *   *   * *   **  *     *   * *   * *   *");
             Console.WriteLine(" *       * *** * ***  *** *** *   *    *** * ***  *** *** *  * ***   **** *** *  *   *  *  * *** *** ***  ***  *    * *       *  *  * *** *** ");
             Console.WriteLine("\n");
-            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
             Console.ForegroundColor=ConsoleColor.Blue;
 
             Console.WriteLine("                                                        MENU");
             Console.ForegroundColor=ConsoleColor.Black;
-            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
             Console.WriteLine("\n1- Comenzar Juego");
             Console.WriteLine("2- Salir del Juego");
             opcion=Console.ReadLine();
