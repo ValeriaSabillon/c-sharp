@@ -29,9 +29,9 @@ namespace Quien_Quiere_Ser_Millonario
           Console.WriteLine("5- Tienes derecho a renunciar despues de la primer pregunta con la letra Y");
           Console.WriteLine("6- Tienes derecho a renunciar con la cantidad de premio que obtuvo");
           
-          Console.WriteLine("\tXXXXXXXXXX ");
+          Console.WriteLine("\tXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX ");
           Console.WriteLine("\tEmpecemos");
-          Console.WriteLine("\tXXXXXXXXXX");
+          Console.WriteLine("\tXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("\n");
            Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
           Console.WriteLine("                            ___________");
