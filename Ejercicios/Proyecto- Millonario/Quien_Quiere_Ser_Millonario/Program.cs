@@ -31,7 +31,7 @@ namespace Quien_Quiere_Ser_Millonario
             Console.WriteLine("     *     ***  *   * *** *** *   *    ***  *   * *** *** **** ***   **** *** ****   *     * *** *   *    ***  *    *     *      **** *** ***" );
             Console.WriteLine("    * *   *   * *   *  *  *   **  *   *   * *   *  *  *   *  * *     *    *   *  *   *     *  *  *   *   *   * * *  *    * *     *  *  * *   *");
             Console.WriteLine("   *****  * * * *   *  *  *** * * *   * * * *   *  *  *** ***  ***     *  **  ***    **  * *  *  *   *   *   * *  * *   *****    ***   * *   *");
-            Console.WriteLine("  *     * * * * *   *  *  *   * * *   * * * *   *  *  *   * *  *        * *   * *    * * * *  *  *   *   *   * *   **  *     *   * *   * *   *");
+            Console.WriteLine("  *     * *   * *   *  *  *   *  **   *   * *   *  *  *   * *  *        * *   * *    * * * *  *  *   *   *   * *   **  *     *   * *   * *   *");
             Console.WriteLine(" *       * *** * ***  *** *** *   *    *** * ***  *** *** *  * ***   **** *** *  *   *  *  * *** *** ***  ***  *    * *       *  *  * *** *** ");
             Console.WriteLine("\n");
             Console.WriteLine("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
